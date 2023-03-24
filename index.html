@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet"></link>
+    <script src="index.js" defer></script>
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <div class="appContainer">
+      <form class="inputData">
+        <div>
+          <label for="description">Task description<strong>*</strong></label>
+          <textarea id="description" name="description" rows="5" cols="35" maxlength="160" required></textarea>
+        </div>
+        <div>
+          <label for="deadline">Deadline</label>
+          <input id="deadline" type="datetime-local" name="deadline"/>
+        </div>
+        <button type="submit">Add</button>
+      </form>
+      <div class="outputContainer">
+        <div>
+          <label for="sort">Sort by: </label>
+          <select id="sort">
+            <option value="byTimeAdded" selected>Recently added</option>
+            <option value="byDeadline">Deadline</option>
+            <option value="byTimeCompleted">Recently completed</option>
+          </select>        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
