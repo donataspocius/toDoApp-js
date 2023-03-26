@@ -1,3 +1,109 @@
-* {
-    background-color: burlywood;
+/* MAIN ELEMENTS */
+body {
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+.appContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* USER INPUT */
+
+.inputData h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.inputData {
+  align-items: center;
+  background-color: bisque;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 20px 20px;
+  margin-top: 10px;
+}
+
+.userInput {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 10px;
+  align-items: center;
+}
+form label {
+  font-size: 17px;
+  text-align: right;
+}
+
+.userInput textarea,
+input {
+  max-width: 300px;
+}
+.sortContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+/* TASK CARD */
+.taskCard {
+  display: grid;
+  grid-template-columns: 3fr auto;
+  gap: 30px;
+  background-color: bisque;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 20px 30px;
+  margin: 10px 0px;
+  list-style-type: none;
+}
+
+.taskCard p:first-of-type {
+  padding-bottom: 15px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.completed p {
+  text-decoration: line-through;
+}
+
+.cardControls {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* COMPONENTS */
+.btn {
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 5px 11px;
+}
+
+.btn--red {
+  background-color: rgb(239, 100, 75);
+  color: white;
+}
+
+.btn--green {
+  background-color: rgb(223, 125, 13);
+  color: white;
+}
+
+.btn--big {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+form button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
 }

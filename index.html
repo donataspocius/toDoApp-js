@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="./reset.css" />
     <script src="index.js" defer></script>
     <title>To-Do App</title>
   </head>
   <body>
     <div class="appContainer">
       <form class="inputData">
-        <div>
+        <h1>To-Do App / Donatas Pocius</h1>
+        <div class="userInput">
           <label for="description">Task description<strong>*</strong></label>
           <textarea id="description" name="description" rows="5" cols="35" maxlength="160" required></textarea>
-        </div>
-        <div>
           <label for="deadline">Deadline</label>
           <input id="deadline" type="datetime-local" name="deadline"/>
         </div>
-        <button type="submit">Add</button>
+        <button type="submit" class="btn btn--green btn--big">Add New Task</button>
       </form>
       <div class="outputContainer">
-        <div>
+        <div class="sortContainer">
           <label for="sort">Sort by: </label>
           <select id="sort">
-            <option value="byTimeAdded" selected>Recently added</option>
+            <option value="byRecentlyAdded" selected>Recently added</option>
             <option value="byDeadline">Deadline</option>
-            <option value="byTimeCompleted">Recently completed</option>
+            <option value="byRecentlyCompleted">Recently completed</option>
           </select>        
         </div>
       </div>
